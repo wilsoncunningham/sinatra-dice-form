@@ -2,6 +2,9 @@
   <%= @num_dice %>d<%= @num_sides %>
 </h1>
 
+<a href="/">Go Home</a> | 
+<a href="/process_roll?dice=<%= @num_dice %>&sides=<%= @num_sides %>">Roll Again</a>
+
 <ol>
 <% @rolls.each do |roll|%>
   <li>
